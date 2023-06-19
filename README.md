@@ -1,9 +1,9 @@
 # SRAMPS
 A place to discuss findings and learning outcomes of XC3 project.
 ## Contributing members
-Simon Dahal ()\
+Simon Dahal (103158504@student.swin.edu.au, simonsd054@gmail.com)\
 Raju Dahal (104055570@student.swin.edu.au, dahalraju55@gmail.com)\
-Auninda Alam (103158504@student.swin.edu.au, simonsd054@gmail.com)\
+Auninda Alam ()\
 Marzan Tahreen ()\
 Prakriti Neupane ()\
 Sujan ()
