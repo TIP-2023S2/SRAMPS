@@ -67,7 +67,7 @@ prometheus server.
 
 To further break it down
 ```json lines
-The data returned from lambda function is stored in GAUGE.
+The data returned from lambda functions is stored in GAUGE.
 The data collected in GAUGE is sent to the Collector Registory.
 The aggregated data is sent to prometheus server using push_to_gateway.
 ```
