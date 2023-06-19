@@ -3,7 +3,7 @@ A place to discuss findings and learning outcomes of XC3 project.
 ## Contributing members
 Simon Dahal ()\
 Raju Dahal (104055570@student.swin.edu.au, dahalraju55@gmail.com)\
-Auninda Alam ()\
+Auninda Alam (103158504@student.swin.edu.au, simonsd054@gmail.com)\
 Marzan Tahreen ()\
 Prakriti Neupane ()\
 Sujan ()
