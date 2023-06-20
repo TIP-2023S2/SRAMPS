@@ -6,7 +6,7 @@ Raju Dahal (104055570@student.swin.edu.au, dahalraju55@gmail.com)\
 Auninda Alam ()\
 Marzan Tahreen ()\
 Prakriti Neupane ()\
-Sujan ()
+Sujan (103851447@student.swin.edu.au, sujanbudhathoki123@gmail.com)
 
 ## Naming Convention
 The project was named SRAMPS by taking the initials of each of the contributing members.
