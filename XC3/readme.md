@@ -1,7 +1,5 @@
 # Installation guide for XC3
 This file contains step-by-step instructions for installation of XC3 project. \n
-This installation guide is tested on linux and does not guarantee success for windows and ios.
-Please use this guide at your own risk as the creator is not responsible for any outcome.
 
 ## Pre-Requirements
 Following files should be pre-installed in your system
