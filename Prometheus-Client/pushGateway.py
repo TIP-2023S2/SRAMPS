@@ -26,7 +26,7 @@ def test_push_to_gateway(value):
 
         # Create a Gauge metric
         gauge_metric = Gauge(
-            'my_gauge_metric',
+            'my_gauge_metricxxxxx',
             'Test gauge metric',
             registry=registry)
 
@@ -38,11 +38,11 @@ def test_push_to_gateway(value):
             time.sleep(1)  # Sleep for 1 second
 
             # exit the loop after 100 seconds
-            if time.time() - start_time >= 100:
+            if time.time() - start_time >= 10000:
                 break
-        return "Successfully created prometheus server on port 8000"
+        return "Successfully created prometheus server on port 8002"
     except Exception as e:
         print(str(e))
 
 
-print(test_push_to_gateway(100))
+print(test_push_to_gateway(100000))
