@@ -38,17 +38,16 @@ def test_registry(value):
         # Update the gauge metric value
         while True:
             gauge_metric.labels(label_name1='value1', label_name2='value2').set(value)  # Update the value
-            time.sleep(1)  # Sleep for 1 second
+            time.sleep(value)  # Sleep to keep server running
 
             # exit the loop after 100 seconds
-            # if time.time() - start_time >= 100:
-            #     break
+            if time.time() - start_time >= 100:
+                break
+
+            return "Successfully created prometheus server on port 8000"
 
     except Exception as e:
         print(str(e))
 
-    return "Successfully created prometheus server on port 8000"
 
-
-print(test_registry(100))
-
+print(test_registry(10000))

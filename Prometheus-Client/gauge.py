@@ -33,16 +33,16 @@ def test_gauge(value):
         while True:
             # gauge_metric.set(value)  # Update the value
             gauge_metric.labels(label_name1='value1', label_name2='value2').set(40)
-            time.sleep(1)  # Sleep for 1 second
+            time.sleep(1000)  # Sleep for 1 second
 
             # exit the loop after 100 seconds
-            # if time.time() - start_time >= 100:
-            #     break
+            if time.time() - start_time >= 100:
+                break
+
+            return "Successfully created prometheus server on port 8000"
 
     except Exception as e:
         print(str(e))
-
-    return "Successfully created prometheus server on port 8000"
 
 
 print(test_gauge(1))

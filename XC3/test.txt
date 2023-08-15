@@ -1,0 +1,27 @@
+export PYENV_ROOT="/home/raju/.pyenv" /n
+          command -v pyenv >/dev/null || export PATH="/home/raju/.pyenv/bin:/home/raju/PycharmProjects/SRAMPS/venv/bin:/home/raju/.pyenv/shims:/home/raju/.pyenv/bin:/home/raju/.nvm/versions/node/v20.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+          eval "PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/home/raju/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/home/raju/.pyenv/shims:${PATH}"
+export PYENV_SHELL=bash
+source '/home/raju/.pyenv/libexec/../completions/pyenv.bash'
+command pyenv rehash 2>/dev/null
+pyenv() {
+  local command
+  command="${1:-}"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  activate|deactivate|rehash|shell)
+    eval "$(pyenv "sh-$command" "$@")"
+    ;;
+  *)
+    command pyenv "$command" "$@"
+    ;;
+  esac
+}"
